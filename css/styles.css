@@ -48,7 +48,7 @@ section{padding:64px 0}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .stat{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);text-align:center}
 .stat b{display:block;font-size:24px}
-.services{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.services{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
 .chip{background:#fff;border:1px solid rgba(0,0,0,.06);padding:8px 12px;border-radius:999px;font-weight:600}
 @media (max-width:900px){.about{grid-template-columns:1fr}}
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
@@ -71,9 +71,9 @@ section{padding:64px 0}
 .divider{position:absolute;top:0;bottom:0;width:2px;background:#fff;box-shadow:0 0 0 2px rgba(0,0,0,.15);left:50%;transform:translateX(-1px)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
-.cards .author{margin-top:8px;font-weight:600;color:var(--ink)}
+.cards .author{margin-top:20px;font-weight:600;color:var(--ink)}
 .faq details{background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:16px}
-.faq details+details{margin-top:10px}
+.faq details+details{margin-top:20px}
 @media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.cards{grid-template-columns:1fr}}
 .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
@@ -82,7 +82,7 @@ section{padding:64px 0}
 .actions{display:flex;gap:10px;flex-wrap:wrap}
 .ghost{background:#fff;border:1px solid rgba(0,0,0,.15);color:var(--ink)}
 footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
-.footer-nav{display:flex;gap:14px;justify-content:center;margin-top:8px}
+.footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
 .contacts-section {
   background: #fdfdfd;
   padding: 60px 20px;
@@ -91,13 +91,13 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 
 .contacts-section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   color: #333;
 }
 
 .contacts-section p {
   font-size: 1.1rem;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   color: #555;
 }
 
