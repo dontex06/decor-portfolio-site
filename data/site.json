@@ -1,0 +1,12 @@
+{
+  "hero_title": "Декоративная штукатурка, которая говорит",
+  "hero_subtitle": "Авторские фактуры, акцентные стены и аккуратное исполнение. От идеи до реализации.",
+  "hero_cta": {
+    "label": "Посмотреть работы",
+    "href": "/portfolio.html"
+  },
+  "before_after": {
+    "before": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1400",
+    "after": "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f8?w=1400"
+  }
+}
