@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Декоративная штукатурка — Портфолио</title>
+  <meta name="description" content="Декоративная штукатурка, акцентные стены и авторские фактуры." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><a href="/" style="text-decoration:none;color:inherit">Декоративная штукатурка</a></div>
+    <nav class="menu" aria-label="Навигация">
+      <a href="/index.html">Главная</a>
+      <a href="/about.html">Обо мне</a>
+      <a href="/portfolio.html">Портфолио</a>
+      <a href="/contacts.html">Контакты</a>
+      <a href="/admin/" style="opacity:.6">Админка</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-label="Заставка">
+  <div class="texture" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <h1 id="hero-title">Декоративная штукатурка, которая говорит</h1>
+      <p id="hero-subtitle">Авторские фактуры, современные акцентные стены и чистое исполнение. Помогаю пространству звучать — от идеи до реализации.</p>
+      <a class="btn" id="hero-cta" href="/portfolio.html">Посмотреть работы</a>
+    </div>
+    <div class="hero-media" aria-hidden="true">
+      <div class="mock beige"></div>
+      <div class="mock green"></div>
+      <div class="mock" style="background:#D6C2AE"></div>
+      <div class="mock gray"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="wrap about">
+  <div>
+    <h2>Обо мне</h2>
+    <p id="about-intro">Занимаюсь декоративной штукатуркой и фактурными акцентными стенами. В проектах — спокойная палитра, внимание к деталям и аккуратность исполнения.</p>
+    <div class="services" id="services"></div>
+  </div>
+  <div>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<section class="wrap" aria-label="До/После">
+  <h2>До и после</h2>
+  <div class="compare" id="compare">
+    <img class="after" id="after-img" src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f8?w=1400" alt="После" />
+    <div class="clip"><img class="before" id="before-img" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1400" alt="До" /></div>
+    <input type="range" min="0" max="100" value="50" aria-label="Слайдер сравнения" />
+    <div class="divider" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="wrap faq">
+  <h2>FAQ — частые вопросы</h2>
+  <details>
+    <summary><b>Сколько держится покрытие?</b></summary>
+    <p>При правильной подготовке и защите — многие годы. Даю рекомендации по уходу и гарантию на работу.</p>
+  </details>
+  <details>
+    <summary><b>Можно ли в ванной?</b></summary>
+    <p>Да, при использовании влагостойких составов и финишной защиты. Подберу материалы под условия.</p>
+  </details>
+  <details>
+    <summary><b>Сколько стоит проект?</b></summary>
+    <p>Стоимость зависит от площади, техники и подготовки. Базовая консультация бесплатна — пришлите фото и размеры.</p>
+  </details>
+</section>
+
+<footer>
+  © <span id="year"></span> Декоративная штукатурка • Портфолио
+  <div class="footer-nav"><a href="/privacy.html" style="color:inherit;opacity:.7">Политика конфиденциальности</a></div>
+</footer>
+<script src="/js/common.js"></script>
+<script src="/js/index.js"></script>
+</body></html>

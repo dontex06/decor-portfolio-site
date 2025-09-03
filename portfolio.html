@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Портфолио — Декоративная штукатурка</title>
+  <meta name="description" content="Декоративная штукатурка, акцентные стены и авторские фактуры." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><a href="/" style="text-decoration:none;color:inherit">Декоративная штукатурка</a></div>
+    <nav class="menu" aria-label="Навигация">
+      <a href="/index.html">Главная</a>
+      <a href="/about.html">Обо мне</a>
+      <a href="/portfolio.html">Портфолио</a>
+      <a href="/contacts.html">Контакты</a>
+      <a href="/admin/" style="opacity:.6">Админка</a>
+    </nav>
+  </div>
+</header>
+
+<section class="wrap">
+  <h2>Портфолио</h2>
+  <div class="grid" id="grid"></div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+  <img alt="Просмотр" />
+</div>
+
+<footer>
+  © <span id="year"></span> Декоративная штукатурка • Портфолио
+  <div class="footer-nav"><a href="/privacy.html" style="color:inherit;opacity:.7">Политика конфиденциальности</a></div>
+</footer>
+<script src="/js/common.js"></script>
+<script src="/js/portfolio.js"></script>
+</body></html>
