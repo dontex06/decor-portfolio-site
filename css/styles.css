@@ -83,45 +83,8 @@ section{padding:64px 0}
 .ghost{background:#fff;border:1px solid rgba(0,0,0,.15);color:var(--ink)}
 footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
-.contacts-section {
-  background: #fdfdfd;
-  padding: 60px 20px;
-  text-align: center;
+#contact {
+  margin-top: 80px; 
 }
 
-.contacts-section h2 {
-  font-size: 2rem;
-  margin-bottom: 60px;
-  color: #333;
-}
-
-.contacts-section p {
-  font-size: 1.1rem;
-  margin-bottom: 60px;
-  color: #555;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-}
-
-.contact-link {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #222;
-  background: #f3f3f3;
-  padding: 12px 25px;
-  border-radius: 12px;
-  transition: 0.3s;
-  width: fit-content;
-}
-
-.contact-link:hover {
-  background: #e6e6e6;
-  color: #000;
-  transform: translateY(-3px);
-}
 
