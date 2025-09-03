@@ -1,0 +1,81 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+local_backend: true
+
+collections:
+  - name: "site"
+    label: "Сайт (герой)"
+    files:
+      - label: "Главный экран"
+        name: "home"
+        file: "data/site.json"
+        fields:
+          - {label: "Заголовок", name: "hero_title", widget: "string"}
+          - {label: "Подзаголовок", name: "hero_subtitle", widget: "text"}
+          - label: "Кнопка"
+            name: "hero_cta"
+            widget: "object"
+            fields:
+              - {label: "Текст", name: "label", widget: "string"}
+              - {label: "Ссылка", name: "href", widget: "string", default: "/portfolio.html"}
+          - label: "Сравнение До/После"
+            name: "before_after"
+            widget: "object"
+            fields:
+              - {label: "Фото ДО (URL/загрузка)", name: "before", widget: "image"}
+              - {label: "Фото ПОСЛЕ (URL/загрузка)", name: "after", widget: "image"}
+
+  - name: "about"
+    label: "Обо мне"
+    files:
+      - label: "Раздел 'Обо мне'"
+        name: "about"
+        file: "data/about.json"
+        fields:
+          - {label: "Текст (вступление)", name: "intro", widget: "text"}
+          - label: "Услуги"
+            name: "services"
+            widget: "list"
+            field: {label: "Услуга", name: "service", widget: "string"}
+          - label: "Статистика"
+            name: "stats"
+            widget: "list"
+            fields:
+              - {label: "Значение", name: "value", widget: "string"}
+              - {label: "Подпись", name: "label", widget: "string"}
+          - {label: "Фото", name: "photo", widget: "image", required: false}
+
+  - name: "contacts"
+    label: "Контакты"
+    files:
+      - label: "Данные для связи"
+        name: "contacts"
+        file: "data/contacts.json"
+        fields:
+          - {label: "Телефон", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Telegram (ссылка)", name: "telegram", widget: "string", required: false}
+          - {label: "WhatsApp (ссылка)", name: "whatsapp", widget: "string", required: false}
+          - {label: "Instagram (ссылка)", name: "instagram", widget: "string", required: false}
+
+  - name: "portfolio"
+    label: "Портфолио"
+    files:
+      - label: "Работы (список)"
+        name: "works"
+        file: "data/works.json"
+        fields:
+          - label: "Работы"
+            name: "works"
+            widget: "list"
+            fields:
+              - {label: "Название", name: "title", widget: "string"}
+              - {label: "Стиль", name: "style", widget: "select", options: ["modern","loft","classic"], required: false}
+              - {label: "Изображение", name: "image", widget: "image"}
+              - {label: "Описание", name: "description", widget: "text", required: false}
