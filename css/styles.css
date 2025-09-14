@@ -122,9 +122,19 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 }
 
 .icon {
-  font-size: 42px;
-  margin-bottom: 15px;
-  color: #2f6d3b; /* зелёный */
+  font-size: 28px;         /* уменьшили размер */
+  margin-bottom: 10px;     /* сделали отступ чуть меньше */
+  color: #2f6d3b;          /* зелёный (оставляем твой стиль) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;             /* аккуратная рамка */
+  height: 50px;
+  border-radius: 50%;      /* делаем круглую подложку */
+  background: #f3f3f3;     /* светлый фон для аккуратности */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* лёгкая тень */
+}
+
 }
 
 /* Мобильная версия */
@@ -141,9 +151,19 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 }
 
 .icon {
-  font-size: 42px;
-  margin-bottom: 15px;
-  color: #2f6d3b; /* зелёный */
+  font-size: 28px;         /* уменьшили размер */
+  margin-bottom: 10px;     /* сделали отступ чуть меньше */
+  color: #2f6d3b;          /* зелёный (оставляем твой стиль) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;             /* аккуратная рамка */
+  height: 50px;
+  border-radius: 50%;      /* делаем круглую подложку */
+  background: #f3f3f3;     /* светлый фон для аккуратности */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* лёгкая тень */
+}
+
 }
 
 .step h3 {
