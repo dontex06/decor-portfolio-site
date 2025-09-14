@@ -188,7 +188,12 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
     width: 100%;
   }
 }
-
+#contact {
+  margin-top: 80px; /* чтобы не прилипал */
+  padding: 60px 20px;
+  background: #f5f0e8; /* нежный бежевый фон */
+  border-top: 3px solid #d2693c; /* терракотовая линия сверху */
+}
 
 
 
