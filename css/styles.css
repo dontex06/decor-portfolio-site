@@ -194,57 +194,74 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
   background: #f5f0e8; /* нежный бежевый фон */
   border-top: 3px solid #d2693c; /* терракотовая линия сверху */
 }
+/* Контактный блок */
 .contact-section {
-  background: #2f6d3b; /* тёмно-зелёный фон */
-  color: #fff;
+  background-color: #f5f0ea; /* нежный бежевый фон */
+  padding: 60px 20px;
   text-align: center;
-  padding: 70px 20px;
+  border-radius: 20px;
+  margin-top: 60px;
 }
 
 .contact-section h2 {
-  font-size: 28px;
+  font-size: 2rem;
   margin-bottom: 10px;
-  color: #f5f0e8; /* бежевый */
+  color: #2c2c2c;
 }
 
 .contact-section p {
   margin-bottom: 30px;
-  color: #ddd;
+  color: #555;
+  font-size: 1.1rem;
 }
 
+/* Кнопки */
 .contact-buttons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .contact-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 20px;
-  border-radius: 50px;
-  font-size: 16px;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.3s ease;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contact-btn img {
-  width: 20px;
-  height: 20px;
+/* Цвета кнопок */
+.telegram {
+  background-color: #0088cc;
+}
+.whatsapp {
+  background-color: #25D366;
+}
+.phone {
+  background-color: #d97742; /* тёплый терракотовый */
+}
+.email {
+  background-color: #333333;
 }
 
+/* Hover-эффекты */
 .contact-btn:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
-/* разные стили для кнопок */
-.telegram { background: #0088cc; color: white; }
-.whatsapp { background: #25d366; color: white; }
-.phone    { background: #d2693c; color: white; }
-.email    { background: #444; color: white; }
+/* Иконки */
+.contact-btn .icon {
+  font-size: 1.4rem;
+}
+
 
 
 
