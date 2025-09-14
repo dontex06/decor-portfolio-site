@@ -89,14 +89,14 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .process {
   text-align: center;
   padding: 80px 20px;
-  background: #f9f9f9; /* светлый фон */
+  background: #f5f0eb; /* бежевый */
 }
 
 .process h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-family: "Playfair Display", serif;
   margin-bottom: 50px;
-  color: #333;
+  color: #1a1a1a; /* чёрный */
 }
 
 .steps {
@@ -108,11 +108,12 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 
 .step {
   flex: 1 1 220px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 20px;
   padding: 30px 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 6px solid #d2693c; /* терракота */
 }
 
 .step:hover {
@@ -123,17 +124,18 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .icon {
   font-size: 42px;
   margin-bottom: 15px;
+  color: #2f6d3b; /* зелёный */
 }
 
 .step h3 {
   font-size: 20px;
-  color: #222;
+  color: #1a1a1a; /* чёрный */
   margin-bottom: 10px;
 }
 
 .step p {
   font-size: 15px;
-  color: #555;
+  color: #444;
 }
 
 /* Мобильная версия */
@@ -147,6 +149,7 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
     width: 100%;
   }
 }
+
 
 
 
