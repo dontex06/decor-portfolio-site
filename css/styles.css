@@ -100,14 +100,14 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 }
 
 .steps {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  gap: 30px; /* расстояние между карточками */
+  max-width: 900px;
+  margin: 0 auto; /* центрирование блока */
 }
 
 .step {
-  flex: 1 1 220px;
   background: #ffffff;
   border-radius: 20px;
   padding: 30px 20px;
@@ -115,6 +115,25 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
   transition: transform 0.2s, box-shadow 0.2s;
   border-top: 6px solid #d2693c; /* терракота */
 }
+
+.step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #2f6d3b; /* зелёный */
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr; /* 1 колонка */
+  }
+}
+
 
 .step:hover {
   transform: translateY(-6px);
