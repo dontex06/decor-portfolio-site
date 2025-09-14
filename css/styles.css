@@ -194,6 +194,57 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
   background: #f5f0e8; /* нежный бежевый фон */
   border-top: 3px solid #d2693c; /* терракотовая линия сверху */
 }
+.contact-section {
+  background: #2f6d3b; /* тёмно-зелёный фон */
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #f5f0e8; /* бежевый */
+}
+
+.contact-section p {
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.contact-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}
+
+/* разные стили для кнопок */
+.telegram { background: #0088cc; color: white; }
+.whatsapp { background: #25d366; color: white; }
+.phone    { background: #d2693c; color: white; }
+.email    { background: #444; color: white; }
 
 
 
