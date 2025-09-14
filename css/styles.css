@@ -86,5 +86,67 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 #contact {
   margin-top: 25px; 
 }
+.process {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9f9f9; /* светлый фон */
+}
+
+.process h2 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  flex: 1 1 220px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
 
 
