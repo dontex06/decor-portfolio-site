@@ -277,21 +277,38 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 }
 
 
-.feature.beige:hover {
-  background: #f7f3ee; /* светлее бежевый */
+.feature:nth-child(1) {
+  background: #e6d8c9; /* бежевый */
+  transition: background 0.3s ease;
+}
+.feature:nth-child(1):hover {
+  background: #efe3d6; /* светлее бежевого */
 }
 
-.feature.terracotta:hover {
-  background: #e07a5f; /* светлее терракотовый */
+.feature:nth-child(2) {
+  background: #e5b49b; /* терракотовый */
+  transition: background 0.3s ease;
+}
+.feature:nth-child(2):hover {
+  background: #eec6b2; /* светлее терракотового */
 }
 
-.feature.green:hover {
-  background: #88b88a; /* светлее зелёный */
+.feature:nth-child(3) {
+  background: #cfd4b8; /* оливковый */
+  transition: background 0.3s ease;
+}
+.feature:nth-child(3):hover {
+  background: #dee2cc; /* светлее оливкового */
 }
 
-.feature.black:hover {
-  background: #333333; /* мягкий тёмный вместо резкого чёрного */
+.feature:nth-child(4) {
+  background: #c7b8ae; /* серо-коричневый */
+  transition: background 0.3s ease;
 }
+.feature:nth-child(4):hover {
+  background: #d6c9c0; /* светлее серо-коричневого */
+}
+
 
 
 .feature img {
