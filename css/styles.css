@@ -272,10 +272,22 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 }
 
 
-.feature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+.feature.beige:hover {
+  background: #f7f3ee; /* светлее бежевый */
 }
+
+.feature.terracotta:hover {
+  background: #e07a5f; /* светлее терракотовый */
+}
+
+.feature.green:hover {
+  background: #88b88a; /* светлее зелёный */
+}
+
+.feature.black:hover {
+  background: #333333; /* мягкий тёмный вместо резкого чёрного */
+}
+
 
 .feature img {
   width: 55px;
