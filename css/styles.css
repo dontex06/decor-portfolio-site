@@ -277,36 +277,50 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 }
 
 
+.feature {
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* 1 */
 .feature:nth-child(1) {
   background: #e6d8c9; /* бежевый */
-  transition: background 0.3s ease;
 }
 .feature:nth-child(1):hover {
-  background: #efe3d6; /* светлее бежевого */
+  background: #efe3d6; /* светлее */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
+/* 2 */
 .feature:nth-child(2) {
   background: #e5b49b; /* терракотовый */
-  transition: background 0.3s ease;
 }
 .feature:nth-child(2):hover {
-  background: #eec6b2; /* светлее терракотового */
+  background: #eec6b2; /* светлее */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
+/* 3 */
 .feature:nth-child(3) {
   background: #cfd4b8; /* оливковый */
-  transition: background 0.3s ease;
 }
 .feature:nth-child(3):hover {
-  background: #dee2cc; /* светлее оливкового */
+  background: #dee2cc; /* светлее */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
+/* 4 */
 .feature:nth-child(4) {
   background: #c7b8ae; /* серо-коричневый */
-  transition: background 0.3s ease;
 }
 .feature:nth-child(4):hover {
-  background: #d6c9c0; /* светлее серо-коричневого */
+  background: #d6c9c0; /* светлее */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 
