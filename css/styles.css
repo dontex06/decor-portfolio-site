@@ -412,7 +412,8 @@ img {
   }
 
   .process-step {
-    min-height: 200px;   /* одинаковая высота */
+    min-height: 180px;   /* одинаковая высота */
+    width: 100px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
