@@ -370,17 +370,15 @@ img {
     align-items: center;
   }
 }
-/* Для телефонов: сохраняем сетку 2x2 */
 @media (max-width: 768px) {
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr; /* две колонки */
-    gap: 12px; /* отступы между квадратиками */
+    gap: 12px;
   }
 
   .feature {
-    aspect-ratio: 1 / 1; /* делаем квадраты */
-    min-height: auto; /* убираем фиксированную высоту */
+    aspect-ratio: 1 / 1; /* квадрат */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -391,13 +389,16 @@ img {
 
   .feature img {
     max-width: 48px;
+    height: auto; /* иконки не тянутся */
     margin-bottom: 8px;
   }
 
   .feature h3 {
-    font-size: 14px;
+    font-size: clamp(12px, 2.5vw, 16px); /* авто-уменьшение текста */
+    line-height: 1.2;
   }
 }
+
 
 
 
