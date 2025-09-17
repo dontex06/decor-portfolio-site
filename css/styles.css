@@ -259,17 +259,18 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 }
 
 .feature:nth-child(1) {
-  background: #f3e9df; /* нежный бежевый */
+  background: #e6d8c9; /* бежевый, темнее */
 }
 .feature:nth-child(2) {
-  background: #f4d5c3; /* светло-терракотовый */
+  background: #e5b49b; /* терракотовый мягкий */
 }
 .feature:nth-child(3) {
-  background: #e4e6d9; /* светлый оливковый */
+  background: #cfd4b8; /* оливковый темнее */
 }
 .feature:nth-child(4) {
-  background: #ddd1c6; /* теплый серо-коричневый */
+  background: #c7b8ae; /* серо-коричневый */
 }
+
 
 .feature:hover {
   transform: translateY(-5px);
