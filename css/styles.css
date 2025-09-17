@@ -331,6 +331,45 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
   font-weight: 500;
 }
 
+/* Все картинки будут адаптивными */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Адаптив под телефоны */
+@media (max-width: 768px) {
+  /* Текст поменьше */
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Блоки "процесс работы" и "фишки" в 1 колонку */
+  .features {
+    grid-template-columns: 1fr; /* вместо 2 колонок */
+    gap: 15px;
+  }
+
+  /* Кнопки на всю ширину */
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Заголовки по центру */
+  h2, h3 {
+    text-align: center;
+  }
+
+  /* Контакты выравниваем по центру */
+  #contact .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 
