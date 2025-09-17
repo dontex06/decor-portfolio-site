@@ -411,15 +411,26 @@ img {
     grid-template-columns: repeat(2, 1fr) !important; /* 2 в ряд */
   }
 
-  .process-step {
-    min-height: 100x;   /* одинаковая высота */
-    width: 80px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 на 2 */
+  gap: 20px;
+  justify-items: center;
+}
+
+.process-step {
+  width: 100px;   /* ширина всех карточек */
+  height: 140px;  /* одинаковая высота */
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 }
 
 
