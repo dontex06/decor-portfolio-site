@@ -397,18 +397,21 @@ img {
     line-height: 1.2;
   }
 }
+
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 в ряд */
   gap: 20px;
 }
+
+/* Для телефонов — сетка 2x2 */
 @media (max-width: 768px) {
   .process-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 на 2 */
+    grid-template-columns: repeat(2, 1fr); /* 2 в ряд */
   }
 
   .process-step {
-    min-height: 180px;   /* фиксируем одинаковую высоту */
+    min-height: 200px;  /* одинаковая высота */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -416,6 +419,7 @@ img {
     text-align: center;
   }
 }
+
 
 
 
