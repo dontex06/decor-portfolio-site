@@ -398,6 +398,34 @@ img {
     line-height: 1.2;
   }
 }
+@media (max-width: 768px) {
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    grid-auto-rows: 1fr; /* одинаковая высота */
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .feature img {
+    max-width: 48px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .feature h3 {
+    font-size: clamp(12px, 2.5vw, 16px);
+    line-height: 1.2;
+  }
+}
 
 
 
