@@ -274,7 +274,6 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
   background: #f2e9df; /* чуть светлее и теплее */
   padding: 20px;
   border-radius: 12px;
-  transition: none; /* убираем подсветку и анимацию */
 }
 
 
