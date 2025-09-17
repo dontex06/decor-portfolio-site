@@ -271,16 +271,10 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
   background: #c7b8ae; /* серо-коричневый */
 }
 .feature {
-  background: #f0e9e0; /* твой бежевый */
+  background: #f2e9df; /* чуть светлее и теплее */
   padding: 20px;
   border-radius: 12px;
-  transition: all 0.3s ease; /* плавный эффект */
-}
-
-.feature:hover {
-  transform: scale(1.03);
-  background: #e6dfd6; /* чуть темнее бежевого */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: none; /* убираем подсветку и анимацию */
 }
 
 
