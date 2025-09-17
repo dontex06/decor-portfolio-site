@@ -270,11 +270,7 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .feature:nth-child(4) {
   background: #c7b8ae; /* серо-коричневый */
 }
-.feature {
-  background: #f2e9df; /* чуть светлее и теплее */
-  padding: 20px;
-  border-radius: 12px;
-}
+
 
 
 .feature {
