@@ -398,20 +398,21 @@ img {
   }
 }
 
+/* ПК */
 .process-grid {
-  display: grid;
+  display: grid !important;              /* принудительно grid */
   grid-template-columns: repeat(4, 1fr); /* 4 в ряд */
   gap: 20px;
 }
 
-/* Для телефонов — сетка 2x2 */
+/* Телефоны */
 @media (max-width: 768px) {
   .process-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 в ряд */
+    grid-template-columns: repeat(2, 1fr) !important; /* 2 в ряд */
   }
 
   .process-step {
-    min-height: 200px;  /* одинаковая высота */
+    min-height: 200px;   /* одинаковая высота */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -419,6 +420,7 @@ img {
     text-align: center;
   }
 }
+
 
 
 
