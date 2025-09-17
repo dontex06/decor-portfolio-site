@@ -288,7 +288,7 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
   background: #e6d8c9; /* бежевый */
 }
 .feature:nth-child(1):hover {
-  background: #c9e6ca; /* светлее */
+  background: #d3cb9f; /* светлее */
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
