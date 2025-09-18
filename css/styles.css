@@ -429,6 +429,28 @@ img {
   }
 }
 
+/* --- ТЕЛЕФОНЫ --- */
+@media (max-width: 768px) {
+  .contact {
+    text-align: left; /* текст во всю ширину */
+  }
+
+  .contact p {
+    max-width: 100%; /* текст растягивается */
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row; /* кнопки в линию */
+    justify-content: space-between; /* равномерное распределение */
+    gap: 10px;
+  }
+
+  .actions .btn {
+    flex: 1; /* кнопки одинаковой ширины */
+    text-align: center;
+  }
+}
 
 
 
