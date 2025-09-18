@@ -429,28 +429,21 @@ img {
   }
 }
 
-/* --- ТЕЛЕФОНЫ --- */
-@media (max-width: 768px) {
-  .contact {
-    text-align: left; /* текст во всю ширину */
-  }
-
-  .contact p {
-    max-width: 100%; /* текст растягивается */
-  }
-
-  .actions {
-    display: flex;
-    flex-direction: row; /* кнопки в линию */
-    justify-content: space-between; /* равномерное распределение */
-    gap: 10px;
-  }
-
-  .actions .btn {
-    flex: 1; /* кнопки одинаковой ширины */
-    text-align: center;
-  }
+/* Стили для кнопок в разделе Контакты */
+.contact .actions {
+  display: flex !important;       /* делаем флекс-контейнер */
+  flex-direction: row !important; /* кнопки в линию */
+  justify-content: center;        /* выравнивание по центру */
+  gap: 12px;                      /* промежуток между кнопками */
+  flex-wrap: wrap;                /* если не помещаются — переносятся */
 }
+
+.contact .actions .btn {
+  flex: 1 1 auto;          /* кнопки растягиваются равномерно */
+  text-align: center;
+  max-width: 200px;        /* чтобы не были слишком широкими */
+}
+
 
 
 
