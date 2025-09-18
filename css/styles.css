@@ -398,33 +398,34 @@ img {
   }
 }
 
-/* Общий стиль — для ПК */
+/* Общая сетка */
 .steps {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 в ряд */
+  grid-template-columns: repeat(4, 1fr); /* На ПК 4 в ряд */
   gap: 20px;
 }
 
-/* Карточка */
+/* Карточки */
 .step {
-  background: #e6d8c9; /* временный фон, можно заменить */
+  background: #e6d8c9; /* временный фон */
   padding: 20px;
   border-radius: 12px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; /* равномерное распределение внутри */
   align-items: center;
 }
 
-/* Телефоны — делаем сетку 2 на 2 */
+/* --- ТЕЛЕФОНЫ --- */
 @media (max-width: 768px) {
   .steps {
-    grid-template-columns: repeat(2, 1fr); /* 2 в ряд */
+    grid-template-columns: repeat(2, 1fr); /* 2x2 сетка */
   }
 
   .step {
-    min-height: 180px; /* одинаковая высота */
+    min-height: 220px;   /* фиксируем высоту */
+    height: 100%;
   }
 }
 
