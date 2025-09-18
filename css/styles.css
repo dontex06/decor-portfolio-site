@@ -398,40 +398,36 @@ img {
   }
 }
 
-/* ПК */
-.process-grid {
-  display: grid !important;              /* принудительно grid */
+/* Общий стиль — для ПК */
+.steps {
+  display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 в ряд */
   gap: 20px;
 }
 
-/* Телефоны */
-@media (max-width: 768px) {
-  .process-grid {
-    grid-template-columns: repeat(2, 1fr) !important; /* 2 в ряд */
-  }
-
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 на 2 */
-  gap: 20px;
-  justify-items: center;
-}
-
-.process-step {
-  width: 100px;   /* ширина всех карточек */
-  height: 140px;  /* одинаковая высота */
-  background: #fff;
-  border-radius: 16px;
+/* Карточка */
+.step {
+  background: #e6d8c9; /* временный фон, можно заменить */
   padding: 20px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
+/* Телефоны — делаем сетку 2 на 2 */
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr); /* 2 в ряд */
+  }
+
+  .step {
+    min-height: 180px; /* одинаковая высота */
+  }
 }
+
 
 
 
