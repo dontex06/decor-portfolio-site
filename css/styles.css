@@ -438,7 +438,7 @@ img {
   }
 
   #contact h2, #contact p {
-    text-align: left;
+    text-align: center;
   }
 
   /* Кнопки в линию, но переносятся при нехватке места */
