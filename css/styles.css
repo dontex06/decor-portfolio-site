@@ -83,8 +83,7 @@ section{padding:64px 0}
 .ghost{background:#fff;border:1px solid rgba(0,0,0,.15);color:var(--ink)}
 footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
-#contact {
-  margin-top: 25px; 
+
 }
 .process {
   text-align: center;
@@ -179,62 +178,9 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 
  
 }
-#contact {
-  margin-top: 80px; /* чтобы не прилипал */
-  padding: 60px 20px;
-  background: #f5f0e8; /* нежный бежевый фон */
-  border-top: 3px solid #d2693c; /* терракотовая линия сверху */
-}
-.contact-section {
-  padding: 60px 20px;
-  text-align: center;
-  margin-top: 60px;
-}
 
-.contact-section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #2c2c2c;
-}
 
-.contact-section p {
-  margin-bottom: 30px;
-  color: #555;
-  font-size: 1.1rem;
-}
 
-/* Кнопки */
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.contact-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 24px;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: #d97742; /* терракотовый */
-  color: white;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.contact-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-
-.contact-btn svg {
-  width: 20px;
-  height: 20px;
-}
 .features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -416,144 +362,124 @@ img {
     height: 100%;
   }
 }
+/* ===========================
+   CONTACT — единый, чистый набор правил
+   ВСТАВЬ В САМЫЙ КОНЕЦ style.css
+   =========================== */
+
+#contact {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 80px 0 0 0;            /* расстояние сверху */
+  padding: 40px 16px;           /* внутренний отступ по краям */
+  background: var(--beige);     /* фон как у сайта */
+  border-top: 3px solid var(--terra); /* линия сверху — на всю ширину блока */
+}
+
+/* Внутренний контейнер — центрируем содержимое по ширине */
+#contact > div {
+  max-width: 1120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px; /* дополнительный внутренний отступ */
+}
+
+/* Общее для всех устройств: заголовок/параграф */
+#contact h2 {
+  margin: 0 0 8px 0;
+  font-size: clamp(20px, 3vw, 28px);
+  color: var(--ink);
+}
+#contact p {
+  margin: 0 0 18px 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* ---- ДЕСКТОП: разные представления для home/contacts ---- */
 @media (min-width: 769px) {
-  #contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    padding: 60px 20px;
-    border-top: 3px solid #d2693c;
-    background: #f5f0e8;
+
+  /* --- Главная (центрированные текст и кнопки) --- */
+  body.home-page #contact > div {
+    text-align: center;
+  }
+  body.home-page #contact .contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body.home-page #contact .contact-buttons .contact-btn {
+    min-width: 200px;
+    flex: 0 0 auto;
+    justify-content: center;
   }
 
-  .contact h2,
-  .contact p {
+  /* --- Страница Контакты (левое выравнивание) --- */
+  body.contacts-page #contact > div {
+    text-align: left;
+  }
+  body.contacts-page #contact .contact-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body.contacts-page #contact .contact-buttons .contact-btn {
+    min-width: 200px;
+    flex: 0 0 auto;
+  }
+}
+
+/* ---- МОБИЛЬ: текст на всю ширину, кнопки в линию (wrap разрешён) ---- */
+@media (max-width: 768px) {
+  #contact {
+    padding: 24px 12px;
+    margin-top: 40px;
+  }
+
+  #contact > div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  #contact h2, #contact p {
     text-align: left;
   }
 
-  .contact .actions {
+  /* Кнопки в линию, но переносятся при нехватке места */
+  #contact .contact-buttons {
     display: flex;
-    justify-content: flex-start; /* кнопки идут от левого края */
-    gap: 14px;
-    margin-top: 24px; /* отступ от текста */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* выравниваем по левому краю на мобилке */
+    margin-top: 16px;
   }
 
-  .contact .actions .btn {
-    flex: 0 0 220px;
+  /* Делать по 3 в ряд там, где есть место; на очень узких — 2 в ряд */
+  #contact .contact-buttons .contact-btn {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 96px;
     text-align: center;
     justify-content: center;
   }
-}
-
-/* --- Mobile: текст во всю ширину, кнопки в линию (wrap разрешён) --- */
-@media (max-width: 768px) {
-  /* делаем так, чтобы секция контакт не была разбита на две колонки */
-  #contact {
-    display: block !important;
-    padding: 28px 16px !important;
-    border-top: none !important; /* линия только на ПК */
-    background: transparent !important;
-  }
-
-  /* позволяем контейнеру занимать всю ширину экрана на мобилке */
-  #contact.wrap {
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 16px !important;
-  }
-
-  /* основной блок внутри секции — занимать всю ширину */
-  #contact > div {
-    width: 100% !important;
-  }
-
-  /* Текст — во всю ширину и выровнен по левому краю */
-  .contact p {
-    max-width: 100% !important;
-    text-align: left !important;
-    margin-bottom: 18px;
-  }
-
-  /* Кнопки: в линию, но с переносом при нехватке места */
-  .contact .actions {
-    display: flex !important;
-    flex-direction: row !important;      /* в одну линию */
-    justify-content: space-between !important;
-    gap: 10px !important;
-    flex-wrap: wrap !important;          /* разрешаем перенос (будут переходить на новую строку, а не в колонку) */
-    align-items: center !important;
-  }
-
-  /* на мобилке каждая кнопка тянется, но не до 100%: будут 3 в ряд, если поместятся,
-     и автоматически перейдут на след. строку при нехватке места */
-  .contact .actions .btn {
-    flex: 1 1 calc(33.333% - 10px) !important; /* примерно 3 в ряд */
-    max-width: none !important;
-    min-width: 100px; /* не становиться слишком узкой */
-    justify-content: center !important;
-    text-align: center !important;
-    padding: 12px 14px;
-  }
-
-  /* если хочешь — можно сделать, чтобы на очень узких экранах (<=360px)
-     кнопки располагались по 2 в строке: */
-  @media (max-width: 360px) {
-    .contact .actions .btn {
-      flex: 1 1 calc(50% - 10px) !important; /* 2 в ряд */
+  @media (max-width: 420px) {
+    #contact .contact-buttons .contact-btn {
+      flex: 1 1 calc(50% - 10px);
     }
   }
-
-  /* безопасная подстраховка — отключаем возможные псевдоэлементы, мешающие расширению */
-  #contact::before, #contact::after {
-    display: none !important;
-    content: none !important;
-  }
-}
-/* Общие стили */
-#contact {
-  margin-top: 80px;
-  padding: 60px 20px;
-  background: var(--beige);
-  border-top: 3px solid var(--terra);
 }
 
-#contact h2,
-#contact p {
-  margin-bottom: 20px;
-}
-body.home-page #contact .actions {
-  display: flex;
-  justify-content: center; /* кнопки по центру */
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-/* --- Страница Контактов --- */
-body.contacts-page #contact h2,
-body.contacts-page #contact p {
-  text-align: left;
-}
-
-body.contacts-page #contact .actions {
-  display: flex;
-  justify-content: flex-start; /* кнопки слева */
-  gap: 15px;
-  flex-wrap: wrap;
-}
-/* Секция контактов на главной */
-.home-page .contact-section {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.home-page .contact-buttons {
-  display: flex;
+/* Убедимся, что кнопки имеют корректное выравнивание содержимого */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
+  gap: .6rem;
 }
+
 
 
 
