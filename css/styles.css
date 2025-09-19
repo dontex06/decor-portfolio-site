@@ -416,42 +416,33 @@ img {
     height: 100%;
   }
 }
-/* ===========================
-   CONTACT — final overrides
-   вставь В КОНЕЦ style.css
-   =========================== */
-
-/* --- Desktop: вернуть двухколоночную верстку и линию сверху --- */
+/* --- Контакты: ПК-версия --- */
 @media (min-width: 769px) {
   #contact {
-    display: grid !important;
-    grid-template-columns: 1.1fr 0.9fr !important; /* текст | правая область */
-    gap: 24px !important;
-    padding: 60px 20px !important;
-    border-top: 3px solid #d2693c !important; /* линия сверху только на ПК */
-    background: #f5f0e8 !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 60px 20px;
+    border-top: 3px solid #d2693c;
+    background: #f5f0e8;
   }
 
-  /* если внутри .wrap — возвращаем обычный контейнер */
-  #contact.wrap {
-    max-width: 1120px !important;
-    margin: 0 auto !important;
-    padding: 0 20px !important;
-  }
-
-  /* кнопки на ПК — одинаковой ширины, текст по центру */
-  .contact .actions {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    gap: 14px !important;
-    align-items: center !important;
-    flex-wrap: nowrap !important; /* на ПК не переносим */
-  }
-  .contact .actions .btn {
-    flex: 0 0 220px;     /* фиксированная удобная ширина кнопок на ПК */
-    justify-content: center; /* центрируем содержимое кнопки */
+  .contact h2,
+  .contact p {
     text-align: center;
+  }
+
+  .contact .actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 24px; /* отступ от текста */
+  }
+
+  .contact .actions .btn {
+    flex: 0 0 220px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
