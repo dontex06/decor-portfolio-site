@@ -358,6 +358,123 @@ img {
     height: 100%;
   }
 }
+/* ===========================
+   CONTACT — единый, чистый набор правил
+   ВСТАВЬ В САМЫЙ КОНЕЦ style.css
+   =========================== */
+
+#contact {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 80px 0 0 0;            /* расстояние сверху */
+  padding: 40px 16px;           /* внутренний отступ по краям */
+  background: var(--beige);     /* фон как у сайта */
+  border-top: 3px solid var(--terra); /* линия сверху — на всю ширину блока */
+}
+
+/* Внутренний контейнер — центрируем содержимое по ширине */
+#contact > div {
+  max-width: 1120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px; /* дополнительный внутренний отступ */
+}
+
+/* Общее для всех устройств: заголовок/параграф */
+#contact h2 {
+  margin: 0 0 8px 0;
+  font-size: clamp(20px, 3vw, 28px);
+  color: var(--ink);
+}
+#contact p {
+  margin: 0 0 18px 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* ---- ДЕСКТОП: разные представления для home/contacts ---- */
+@media (min-width: 769px) {
+
+  /* --- Главная (центрированные текст и кнопки) --- */
+  body.home-page #contact > div {
+    text-align: center;
+  }
+  body.home-page #contact .contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body.home-page #contact .contact-buttons .contact-btn {
+    min-width: 200px;
+    flex: 0 0 auto;
+    justify-content: center;
+  }
+
+  /* --- Страница Контакты (левое выравнивание) --- */
+  body.contacts-page #contact > div {
+    text-align: left;
+  }
+  body.contacts-page #contact .contact-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body.contacts-page #contact .contact-buttons .contact-btn {
+    min-width: 200px;
+    flex: 0 0 auto;
+  }
+}
+
+/* ---- МОБИЛЬ: текст на всю ширину, кнопки в линию (wrap разрешён) ---- */
+@media (max-width: 768px) {
+  #contact {
+    padding: 24px 12px;
+    margin-top: 40px;
+  }
+
+  #contact > div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  #contact h2, #contact p {
+    text-align: left;
+  }
+
+  /* Кнопки в линию, но переносятся при нехватке места */
+  #contact .contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* выравниваем по левому краю на мобилке */
+    margin-top: 16px;
+  }
+
+  /* Делать по 3 в ряд там, где есть место; на очень узких — 2 в ряд */
+  #contact .contact-buttons .contact-btn {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 96px;
+    text-align: center;
+    justify-content: center;
+  }
+  @media (max-width: 420px) {
+    #contact .contact-buttons .contact-btn {
+      flex: 1 1 calc(50% - 10px);
+    }
+  }
+}
+
+/* Убедимся, что кнопки имеют корректное выравнивание содержимого */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+}
 
 
 
