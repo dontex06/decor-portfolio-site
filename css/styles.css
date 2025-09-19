@@ -521,13 +521,6 @@ img {
 #contact p {
   margin-bottom: 20px;
 }
-
-/* --- Главная страница --- */
-body.home-page #contact h2,
-body.home-page #contact p {
-  text-align: center;
-}
-
 body.home-page #contact .actions {
   display: flex;
   justify-content: center; /* кнопки по центру */
@@ -547,6 +540,21 @@ body.contacts-page #contact .actions {
   gap: 15px;
   flex-wrap: wrap;
 }
+/* Секция контактов на главной */
+.home-page .contact-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-page .contact-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
 
 
 
