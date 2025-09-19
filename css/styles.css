@@ -416,66 +416,109 @@ img {
     height: 100%;
   }
 }
-/* --- Контакты: ПК-версия --- */
+/* ===========================
+   CONTACT — final overrides
+   вставь В КОНЕЦ style.css
+   =========================== */
+
+/* --- Desktop: вернуть двухколоночную верстку и линию сверху --- */
 @media (min-width: 769px) {
   #contact {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 24px;
-    padding: 60px 20px;
-    border-top: 3px solid #d2693c;
-    background: #f5f0e8;
+    display: grid !important;
+    grid-template-columns: 1.1fr 0.9fr !important; /* текст | правая область */
+    gap: 24px !important;
+    padding: 60px 20px !important;
+    border-top: 3px solid #d2693c !important; /* линия сверху только на ПК */
+    background: #f5f0e8 !important;
   }
 
+  /* если внутри .wrap — возвращаем обычный контейнер */
+  #contact.wrap {
+    max-width: 1120px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+  }
+
+  /* кнопки на ПК — одинаковой ширины, текст по центру */
   .contact .actions {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important; /* на ПК не переносим */
   }
-
   .contact .actions .btn {
-    flex: 0 0 220px;
+    flex: 0 0 220px;     /* фиксированная удобная ширина кнопок на ПК */
+    justify-content: center; /* центрируем содержимое кнопки */
     text-align: center;
-    justify-content: center;
   }
 }
 
-/* --- Контакты: мобильная версия --- */
+/* --- Mobile: текст во всю ширину, кнопки в линию (wrap разрешён) --- */
 @media (max-width: 768px) {
+  /* делаем так, чтобы секция контакт не была разбита на две колонки */
   #contact {
-    display: block;
-    border-top: none; /* линия только на ПК */
-    background: transparent;
-    padding: 28px 16px;
-    width: 100%;
+    display: block !important;
+    padding: 28px 16px !important;
+    border-top: none !important; /* линия только на ПК */
+    background: transparent !important;
   }
 
+  /* позволяем контейнеру занимать всю ширину экрана на мобилке */
+  #contact.wrap {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 16px !important;
+  }
+
+  /* основной блок внутри секции — занимать всю ширину */
+  #contact > div {
+    width: 100% !important;
+  }
+
+  /* Текст — во всю ширину и выровнен по левому краю */
   .contact p {
-    text-align: left;
+    max-width: 100% !important;
+    text-align: left !important;
+    margin-bottom: 18px;
   }
 
+  /* Кнопки: в линию, но с переносом при нехватке места */
   .contact .actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
+    display: flex !important;
+    flex-direction: row !important;      /* в одну линию */
+    justify-content: space-between !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;          /* разрешаем перенос (будут переходить на новую строку, а не в колонку) */
+    align-items: center !important;
   }
 
+  /* на мобилке каждая кнопка тянется, но не до 100%: будут 3 в ряд, если поместятся,
+     и автоматически перейдут на след. строку при нехватке места */
   .contact .actions .btn {
-    flex: 1 1 calc(33.333% - 10px);
-    min-width: 100px;
-    text-align: center;
-    justify-content: center;
+    flex: 1 1 calc(33.333% - 10px) !important; /* примерно 3 в ряд */
+    max-width: none !important;
+    min-width: 100px; /* не становиться слишком узкой */
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 12px 14px;
   }
 
+  /* если хочешь — можно сделать, чтобы на очень узких экранах (<=360px)
+     кнопки располагались по 2 в строке: */
   @media (max-width: 360px) {
     .contact .actions .btn {
-      flex: 1 1 calc(50% - 10px); /* по 2 кнопки в ряд */
+      flex: 1 1 calc(50% - 10px) !important; /* 2 в ряд */
     }
   }
+
+  /* безопасная подстраховка — отключаем возможные псевдоэлементы, мешающие расширению */
+  #contact::before, #contact::after {
+    display: none !important;
+    content: none !important;
+  }
 }
-
-
 
 
 
