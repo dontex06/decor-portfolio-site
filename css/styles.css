@@ -509,44 +509,35 @@ img {
     content: none !important;
   }
 }
-/* Контакты */
+/* Общие стили для текста */
 #contact {
   margin-top: 80px;
   padding: 60px 20px;
-  background: var(--beige); /* твой общий фон */
-  border-top: 3px solid var(--terra); /* терракотовая линия */
+  background: var(--beige);
+  border-top: 3px solid var(--terra);
+}
+
+#contact h2, 
+#contact p {
   text-align: center;
 }
 
-#contact .wrap {
-  display: block; /* отключаем grid */
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: var(--ink);
-}
-
-#contact p {
-  margin-bottom: 30px;
-  color: var(--muted);
-  font-size: 1.1rem;
-}
-
-#contact .actions {
+/* --- Вариант для отдельной страницы contacts.html --- */
+body.contacts-page #contact .actions {
   display: flex;
-  justify-content: flex-end; /* кнопки прижаты к правому краю */
+  justify-content: flex-end; /* кнопки справа */
   gap: 15px;
   flex-wrap: wrap;
 }
 
-#contact .actions .btn {
-  min-width: 180px;
-  text-align: center;
+/* --- Вариант для главной страницы index.html --- */
+body.home-page #contact .actions {
+  display: flex;
+  justify-content: center; /* кнопки по центру */
+  gap: 15px;
+  flex-wrap: wrap;
 }
+
 
 
 
