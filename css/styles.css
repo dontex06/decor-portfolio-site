@@ -509,7 +509,7 @@ img {
     content: none !important;
   }
 }
-/* Общие стили для текста */
+/* Общие стили */
 #contact {
   margin-top: 80px;
   padding: 60px 20px;
@@ -517,23 +517,33 @@ img {
   border-top: 3px solid var(--terra);
 }
 
-#contact h2, 
+#contact h2,
 #contact p {
+  margin-bottom: 20px;
+}
+
+/* --- Главная страница --- */
+body.home-page #contact h2,
+body.home-page #contact p {
   text-align: center;
 }
 
-/* --- Вариант для отдельной страницы contacts.html --- */
-body.contacts-page #contact .actions {
+body.home-page #contact .actions {
   display: flex;
-  justify-content: flex-end; /* кнопки справа */
+  justify-content: center; /* кнопки по центру */
   gap: 15px;
   flex-wrap: wrap;
 }
 
-/* --- Вариант для главной страницы index.html --- */
-body.home-page #contact .actions {
+/* --- Страница Контактов --- */
+body.contacts-page #contact h2,
+body.contacts-page #contact p {
+  text-align: left;
+}
+
+body.contacts-page #contact .actions {
   display: flex;
-  justify-content: center; /* кнопки по центру */
+  justify-content: flex-start; /* кнопки слева */
   gap: 15px;
   flex-wrap: wrap;
 }
