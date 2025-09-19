@@ -511,27 +511,26 @@ img {
 }
 /* Контакты */
 #contact {
-  width: 100%;
   padding: 60px 20px;
-  background: #f5f5f5; /* если нужен фон, можно поменять */
-  text-align: center; /* центрируем текст и кнопки */
+  text-align: center; /* текст и кнопки по центру */
 }
 
 #contact h2,
 #contact p {
-  max-width: 700px;
   margin: 0 auto 20px auto; /* центрируем текст */
+  max-width: 700px;
 }
 
 #contact .actions {
   display: flex;
   justify-content: center; /* кнопки по центру */
   gap: 15px;
-  flex-wrap: wrap; /* чтобы на телефонах переносились */
+  flex-wrap: wrap; /* чтобы на телефоне переносились */
+  margin-top: 20px;
 }
 
 #contact .actions .btn {
-  flex: 1 1 200px; /* все кнопки одной ширины */
+  min-width: 180px; /* одинаковая ширина кнопок */
   text-align: center;
 }
 
