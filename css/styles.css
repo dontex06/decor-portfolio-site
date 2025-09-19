@@ -416,24 +416,64 @@ img {
     height: 100%;
   }
 }
+/* --- Контакты: ПК-версия --- */
+@media (min-width: 769px) {
+  #contact {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+    padding: 60px 20px;
+    border-top: 3px solid #d2693c;
+    background: #f5f0e8;
+  }
 
-/* --- Контакты --- */
-.contact .actions {
-  display: flex;           /* флекс-контейнер */
-  flex-direction: row;     /* кнопки в линию */
-  justify-content: center; /* по центру */
-  gap: 12px;               /* расстояние между кнопками */
-  flex-wrap: wrap;         /* разрешаем перенос */
+  .contact .actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .contact .actions .btn {
+    flex: 0 0 220px;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
-.contact .actions .btn {
-  flex: 1 1 auto;     /* кнопки тянутся равномерно */
-  text-align: center;
-  max-width: 200px;   /* ограничиваем ширину */
+/* --- Контакты: мобильная версия --- */
+@media (max-width: 768px) {
+  #contact {
+    display: block;
+    border-top: none; /* линия только на ПК */
+    background: transparent;
+    padding: 28px 16px;
+    width: 100%;
+  }
+
+  .contact p {
+    text-align: left;
+  }
+
+  .contact .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .contact .actions .btn {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 100px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 360px) {
+    .contact .actions .btn {
+      flex: 1 1 calc(50% - 10px); /* по 2 кнопки в ряд */
+    }
+  }
 }
-
-
-
 
 
 
