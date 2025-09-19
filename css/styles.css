@@ -511,28 +511,43 @@ img {
 }
 /* Контакты */
 #contact {
+  margin-top: 80px;
   padding: 60px 20px;
-  text-align: center; /* текст и кнопки по центру */
+  background: var(--beige); /* твой общий фон */
+  border-top: 3px solid var(--terra); /* терракотовая линия */
+  text-align: center;
 }
 
-#contact h2,
+#contact .wrap {
+  display: block; /* отключаем grid */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
 #contact p {
-  margin: 0 auto 20px auto; /* центрируем текст */
-  max-width: 700px;
+  margin-bottom: 30px;
+  color: var(--muted);
+  font-size: 1.1rem;
 }
 
 #contact .actions {
   display: flex;
-  justify-content: center; /* кнопки по центру */
+  justify-content: flex-end; /* кнопки прижаты к правому краю */
   gap: 15px;
-  flex-wrap: wrap; /* чтобы на телефоне переносились */
-  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 #contact .actions .btn {
-  min-width: 180px; /* одинаковая ширина кнопок */
+  min-width: 180px;
   text-align: center;
 }
+
 
 
 
