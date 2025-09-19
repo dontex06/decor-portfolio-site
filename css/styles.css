@@ -509,6 +509,32 @@ img {
     content: none !important;
   }
 }
+/* Контакты */
+#contact {
+  width: 100%;
+  padding: 60px 20px;
+  background: #f5f5f5; /* если нужен фон, можно поменять */
+  text-align: center; /* центрируем текст и кнопки */
+}
+
+#contact h2,
+#contact p {
+  max-width: 700px;
+  margin: 0 auto 20px auto; /* центрируем текст */
+}
+
+#contact .actions {
+  display: flex;
+  justify-content: center; /* кнопки по центру */
+  gap: 15px;
+  flex-wrap: wrap; /* чтобы на телефонах переносились */
+}
+
+#contact .actions .btn {
+  flex: 1 1 200px; /* все кнопки одной ширины */
+  text-align: center;
+}
+
 
 
 
