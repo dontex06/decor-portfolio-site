@@ -572,8 +572,8 @@ body.home-page #contact .actions {
 /* Стиль по умолчанию (для телефонов и планшетов) */
 #hero-title {
   font-family: "Inter", "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 600;
-  font-size: clamp(24px, 6vw, 36px); /* динамичный размер под экран */
+  font-weight: 400;
+  font-size: clamp(24px, 4.5vw, 36px); /* динамичный размер под экран */
   line-height: 1.2;
   color: #ffffff;
   text-shadow: none;
@@ -583,8 +583,8 @@ body.home-page #contact .actions {
 /* Для ноутбуков и больших экранов */
 @media (min-width: 1024px) {
   #hero-title {
-    font-weight: 400;                   /* тоньше */
-    font-size: clamp(26px, 3.5vw, 42px);/* аккуратный размер */
+    font-weight: 200;                   /* тоньше */
+    font-size: clamp(23px, 3.5vw, 42px);/* аккуратный размер */
     letter-spacing: 0.3px;              /* чуть больше воздуха */
     text-shadow: none;                  /* плоский текст */
   }
