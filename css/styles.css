@@ -582,9 +582,8 @@ body.home-page #contact .actions {
 }
 @media (min-width: 1024px) {
   #hero-title {
-    font-weight: 100;       /* тоньше на ноуте */
-    font-size: clamp(28px, 3vw, 40px);
-    letter-spacing: 0.3px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;  /* теперь реально сработает */
   }
 }
 
