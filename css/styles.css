@@ -573,7 +573,7 @@ body.home-page #contact .actions {
 #hero-title {
   font-family: "Poppins", "Montserrat", Arial, sans-serif;
   font-weight: 300;        /* можно 400–600, в зависимости от строгости */
-  font-size: clamp(26px, 4vw, 42px);
+  font-size: clamp(30px, 3vw, 40px);
   line-height: 1.2;
   letter-spacing: 0.5px;   /* немного воздуха между буквами */
   color: #ffffff;
