@@ -582,7 +582,7 @@ body.home-page #contact .actions {
 }
 @media (min-width: 1024px) {
   #hero-title {
-    font-weight: 600;       /* тоньше на ноуте */
+    font-weight: 100;       /* тоньше на ноуте */
     font-size: clamp(28px, 3vw, 40px);
     letter-spacing: 0.3px;
   }
