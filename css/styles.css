@@ -569,16 +569,27 @@ body.home-page #contact .actions {
   #contact::before, #contact::after {
     display: none !important;
     content: none !important;
-  }
+/* Стиль по умолчанию (для телефонов и планшетов) */
 #hero-title {
   font-family: "Inter", "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 500;                      /* легче, чем 600 */
-  font-size: clamp(26px, 4.5vw, 48px);   /* немного меньше максимальный размер */
-  line-height: 1.2;                      /* комфортное расстояние между строками */
-  letter-spacing: 0.2px;                 /* лёгкое разрежение */
+  font-weight: 600;
+  font-size: clamp(24px, 6vw, 36px); /* динамичный размер под экран */
+  line-height: 1.2;
   color: #ffffff;
-  text-shadow: none;                     /* убрал объём */
+  text-shadow: none;
   margin: 0 0 16px 0;
+}
+
+/* Для ноутбуков и больших экранов */
+@media (min-width: 1024px) {
+  #hero-title {
+    font-weight: 400;                   /* тоньше */
+    font-size: clamp(26px, 3.5vw, 42px);/* аккуратный размер */
+    letter-spacing: 0.3px;              /* чуть больше воздуха */
+    text-shadow: none;                  /* плоский текст */
+  }
+}
+
 }
 
 
