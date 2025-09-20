@@ -578,7 +578,7 @@ body.home-page #contact .actions {
   line-height: 1.15;                     /* больше воздуха между строками */
   letter-spacing: 0.3px;                 /* чуть раздвинул буквы */
   color: #ffffff;
-  text-shadow: 0 6px 20px rgba(0,0,0,0.18); /* мягкая тень */
+  text-shadow: none;
   margin: 0 0 16px 0;
 }
 
