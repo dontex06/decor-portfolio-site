@@ -572,7 +572,7 @@ body.home-page #contact .actions {
     
 #hero-title {
   font-family: "Poppins", "Montserrat", Arial, sans-serif;
-  font-weight: 500;        /* можно 400–600, в зависимости от строгости */
+  font-weight: 300;        /* можно 400–600, в зависимости от строгости */
   font-size: clamp(26px, 4vw, 42px);
   line-height: 1.2;
   letter-spacing: 0.5px;   /* немного воздуха между буквами */
@@ -582,7 +582,7 @@ body.home-page #contact .actions {
 }
 @media (min-width: 1024px) {
   #hero-title {
-    font-weight: 400;       /* тоньше на ноуте */
+    font-weight: 500;       /* тоньше на ноуте */
     font-size: clamp(28px, 3vw, 40px);
     letter-spacing: 0.3px;
   }
