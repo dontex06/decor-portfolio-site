@@ -570,17 +570,17 @@ body.home-page #contact .actions {
     display: none !important;
     content: none !important;
   }
-/* Inter — аккуратный вариант */
 #hero-title {
   font-family: "Inter", "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;                      /* меньше жирности (было 800) */
-  font-size: clamp(26px, 4.8vw, 52px);   /* аккуратнее: на ПК до 52px, на мобилке меньше */
-  line-height: 1.15;                     /* больше воздуха между строками */
-  letter-spacing: 0.3px;                 /* чуть раздвинул буквы */
+  font-weight: 500;                      /* легче, чем 600 */
+  font-size: clamp(26px, 4.5vw, 48px);   /* немного меньше максимальный размер */
+  line-height: 1.2;                      /* комфортное расстояние между строками */
+  letter-spacing: 0.2px;                 /* лёгкое разрежение */
   color: #ffffff;
-  text-shadow: none;
+  text-shadow: none;                     /* убрал объём */
   margin: 0 0 16px 0;
 }
+
 
 
 
