@@ -575,7 +575,7 @@ body.home-page #contact .actions {
   font-weight: 200;        /* можно 400–600, в зависимости от строгости */
   font-size: clamp(26px, 4vw, 42px);
   line-height: 1.2;
-  letter-spacing: 0.5px;   /* немного воздуха между буквами */
+  letter-spacing: -0.02em;
   color: #ffffff;
   text-shadow: none;       /* строгий плоский вид */
   margin: 0 0 16px 0;
@@ -583,7 +583,8 @@ body.home-page #contact .actions {
 @media (min-width: 1024px) {
   #hero-title {
     font-family: 'Inter', sans-serif;
-    font-weight: 200;  /* теперь реально сработает */
+    font-weight: 200; 
+    font-size: clamp(20px, 2.5vw, 36px);
   }
 }
 
