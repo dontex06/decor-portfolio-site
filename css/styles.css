@@ -84,8 +84,9 @@ section{padding:64px 0}
 footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
 @media (max-width: 600px) {
-  .texture {
-    background: linear-gradient(180deg, #F6EFE8 0%, #EDE3D8 100%);
+ .hero .texture {
+  background: linear-gradient(180deg, #d9a679 0%, #f5e4d0 100%);
+}
     opacity: 0.6; /* чуть прозрачнее, чтобы карточки выделялись */
     mix-blend-mode: multiply; /* оставляем, чтобы фон выглядел мягко */
   }
