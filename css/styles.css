@@ -83,6 +83,11 @@ section{padding:64px 0}
 .ghost{background:#fff;border:1px solid rgba(0,0,0,.15);color:var(--ink)}
 footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
+@media (max-width: 768px) {
+  .hero, header {
+    background: #d87c56; /* тёплый терракотовый */
+  }
+}
 
 #contact {
   margin-top: 25px; 
