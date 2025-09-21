@@ -3,19 +3,19 @@
     {
       "title": "Современная акцентная стена",
       "style": "modern",
-      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1200",
+      "image": "/images/full_f2f7hv0T.jpg",
       "description": "Тонкая фактура, спокойная палитра"
     },
     {
       "title": "Бетонная фактура (лофт)",
       "style": "loft",
-      "image": "https://images.unsplash.com/photo-1505691723518-36a5ac3b2d52?q=80&w=1200",
+      "image": "/images/full_rJgPKa8p.jpg",
       "description": "Брутальная текстура"
     },
     {
       "title": "Венецианская штукатурка",
       "style": "classic",
-      "image": "https://images.unsplash.com/photo-1616587894317-f2d2a6b5f8b8?q=80&w=1200",
+      "image": "/images/full_uaz9Usry.jpg",
       "description": "Глубокий блеск"
     }
   ]
