@@ -84,9 +84,9 @@ section{padding:64px 0}
 footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
 @media (max-width: 768px) {
-  .hero, header {
-    background: linear-gradient(180deg, #d87c56 0%, #f5f3ef  100%);
-  }
+  .hero .texture {
+  background-color: #f6f0e8;
+}
 }
 
 
