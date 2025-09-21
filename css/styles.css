@@ -88,6 +88,11 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
   background-color: #f6f0e8;
 }
 }
+@media (max-width: 768px) {
+  .home-page .hero {
+    background: linear-gradient(180deg, #e6cbb2 0%, #f6f0e8 100%);
+  }
+}
 
 
 
