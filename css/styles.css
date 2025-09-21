@@ -83,16 +83,28 @@ section{padding:64px 0}
 .ghost{background:#fff;border:1px solid rgba(0,0,0,.15);color:var(--ink)}
 footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
-@media (max-width: 768px) {
-  .hero .texture {
-  background-color: #f6f0e8;
-}
-}
-@media (max-width: 768px) {
-  .home-page .hero {
-    background: linear-gradient(180deg, #e6cbb2 0%, #f6f0e8 100%);
+@media (max-width: 600px) {
+  .texture {
+    background: linear-gradient(180deg, #F6EFE8 0%, #EADFD2 100%);
+    opacity: 0.9;
+    mix-blend-mode: normal;
+  }
+
+  .hero-copy {
+    background: linear-gradient(180deg, #F8F3EC 0%, #EADFD2 100%);
+    color: var(--ink);
+  }
+
+  .hero h1 {
+    color: var(--ink);
+    text-shadow: none;
+  }
+
+  .hero-copy p {
+    color: var(--muted);
   }
 }
+
 
 
 
