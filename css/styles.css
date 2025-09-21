@@ -85,7 +85,7 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
 @media (max-width: 600px) {
   .texture {
-    background: linear-gradient(180deg, #f5e4d0 0%, #d9a679  100%);
+    background: linear-gradient(180deg, #d87c56 0%, #f5f3ef   100%);
     opacity: 0.6; /* чуть прозрачнее, чтобы карточки выделялись */
     mix-blend-mode: multiply; /* оставляем, чтобы фон выглядел мягко */
   }
