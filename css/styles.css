@@ -85,9 +85,10 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
 @media (max-width: 768px) {
   .hero, header {
-    background: #f0e6df; /* мягкий бежевый */
+    background: linear-gradient(180deg, #d87c56 0%, #f5f3ef  100%);
   }
 }
+
 
 
 
