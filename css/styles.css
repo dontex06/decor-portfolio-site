@@ -85,23 +85,9 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
 @media (max-width: 600px) {
   .texture {
-    background: linear-gradient(180deg, #F6EFE8 0%, #EADFD2 100%);
-    opacity: 0.9;
+    background: linear-gradient(180deg, #F6EFE8 0%, #EDE3D8 100%);
+    opacity: 1;
     mix-blend-mode: normal;
-  }
-
-  .hero-copy {
-    background: linear-gradient(180deg, #F8F3EC 0%, #EADFD2 100%);
-    color: var(--ink);
-  }
-
-  .hero h1 {
-    color: var(--ink);
-    text-shadow: none;
-  }
-
-  .hero-copy p {
-    color: var(--muted);
   }
 }
 
