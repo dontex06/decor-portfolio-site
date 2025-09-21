@@ -86,10 +86,11 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 @media (max-width: 600px) {
   .texture {
     background: linear-gradient(180deg, #F6EFE8 0%, #EDE3D8 100%);
-    opacity: 1;
-    mix-blend-mode: normal;
+    opacity: 0.6; /* чуть прозрачнее, чтобы карточки выделялись */
+    mix-blend-mode: multiply; /* оставляем, чтобы фон выглядел мягко */
   }
 }
+
 
 
 
