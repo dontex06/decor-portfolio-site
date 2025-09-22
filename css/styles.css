@@ -84,7 +84,7 @@ footer{padding:40px 0 60px;color:#6d6d6d;text-align:center}
 .footer-nav{display:flex;gap:14px;justify-content:center;margin-top:20px}
 @media (max-width: 600px) {
   .texture {
-    background: linear-gradient(180deg, #cc5d2f 0%, #f5f3ef  100%);
+    background: linear-gradient(180deg, #cc5d2f 0%, #F6EFE8  100%);
     opacity: 0.6;
     mix-blend-mode: multiply;
   }
