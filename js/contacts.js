@@ -7,7 +7,6 @@ fetch('/data/contacts.json').then(r=>r.json()).then(c=>{
   if(c.phone) html += `<a class="btn ghost" href="tel:${c.phone}">Позвонить</a>`;
   if(c.instagram) html += `<a class="btn ghost" href="${c.instagram}" target="_blank" rel="noopener">Instagram</a>`;
   box.innerHTML = html;
-  // form submit via mailto if email present
   const form = document.getElementById('contact-form');
   form.addEventListener('submit', (e)=>{
     e.preventDefault();
