@@ -1,5 +1,4 @@
 
-// Load site & about snippets for the homepage
 fetch('/data/site.json').then(r=>r.json()).then(site=>{
   if(site.hero_title) document.getElementById('hero-title').textContent = site.hero_title;
   if(site.hero_subtitle) document.getElementById('hero-subtitle').textContent = site.hero_subtitle;
