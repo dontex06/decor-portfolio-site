@@ -533,3 +533,20 @@ body.contacts-page #contact .actions {
   #contact h2, #contact p { text-align: center; }
   #contact .actions { justify-content: center; }
 }
+/* Фикс выравнивания блока Контакты на телефонах */
+@media (max-width: 768px) {
+  #contact h2,
+  #contact p {
+    text-align: left; /* Заголовок и текст к левому краю */
+  }
+
+  #contact .actions {
+    flex-direction: column; /* Кнопки одна под другой */
+    align-items: stretch;   /* Растягиваются на всю ширину */
+  }
+
+  #contact .actions .btn {
+    width: 100%;
+    text-align: center; /* Текст в кнопке по центру */
+  }
+}
