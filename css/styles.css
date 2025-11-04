@@ -700,6 +700,38 @@ body.home-page #contact .actions {
 .about-text p, .about-text li {
   color: #333 !important;
 }
+    @media (max-width: 600px) {
+  .services {
+    justify-content: center; /* выравнивание по центру */
+  }
+  .services .chip {
+    flex: 1 1 calc(50% - 12px); /* две колонки чипов */
+    text-align: center;
+  }
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.stat {
+  flex: 1 1 calc(33% - 16px); /* три карточки в строке на больших экранах */
+  min-width: 200px; /* или сколько нужно */
+}
+@media (max-width: 900px) {
+  .stat {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+@media (max-width: 600px) {
+  .stat {
+    flex: 1 1 100%;
+  }
+}
+.about {
+  padding-bottom: 60px; /* или 80px — сколько хочешь */
+}
+  
 
 
 
