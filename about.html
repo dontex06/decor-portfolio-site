@@ -25,17 +25,34 @@
 </header>
 
 <section class="wrap about">
-  <div>
+  <div class="about-text">
     <h2>Обо мне</h2>
-    <p id="about-intro"></p>
-    <ul id="services-list"></ul>
-    <p id="about-experience"></p>
-    <p id="about-tools"></p>
+
+    <!-- Основное описание из about.json -->
+    <div id="about-intro"></div>
+
+    <!-- Блок направлений -->
+    <h3 style="margin-top: 24px;">Мои направления:</h3>
+    <!-- сюда вставятся "чипы" с услугами -->
+    <div class="services" id="services"></div>
+
+    <!-- Блок статистики -->
+    <h3 style="margin-top: 24px;">Опыт и проекты:</h3>
+    <div class="stats" id="stats"></div>
   </div>
-  <div>
-    <img id="about-photo" src="" alt="Фото" style="width:100%;border-radius:16px;box-shadow:var(--shadow);display:none"/>
+
+  <!-- Фото -->
+  <div class="about-photo">
+    <img
+      id="about-photo"
+      src=""
+      alt="Фото"
+      style="width:100%;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.15);display:none;"
+    />
   </div>
 </section>
+
+
 
 
 <script src="/js/common.js"></script>
