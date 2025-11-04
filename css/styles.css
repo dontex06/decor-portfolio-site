@@ -640,6 +640,82 @@ body.home-page #contact .actions {
 .about-text p {
   color: #333 !important;
 }
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Левая колонка (текст) */
+.about-text {
+  flex: 1 1 60%;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Правая колонка */
+.about-side {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Общий стиль блока справа */
+.side-block h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Чипы с услугами */
+.chip {
+  display: inline-block;
+  background: #f2f2f2;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+}
+
+/* Статистика */
+.stat {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stat b {
+  display: block;
+  font-size: 1.4rem;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+/* Исправление потемневшего текста */
+.about-text p,
+.about-text li {
+  color: #333 !important;
+}
+
+/* Адаптив — при узком экране всё в одну колонку */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-side {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .side-block {
+    flex: 1 1 100%;
+  }
+}
 
 
 
