@@ -783,6 +783,78 @@ body.home-page #contact .actions {
   .about-side { flex-direction: row; flex-wrap:wrap; gap:12px; }
   .about-side .side-block { flex: 1 1 48%; }
 }
+    /* === ОБО МНЕ === */
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 2;
+  color: #222; /* ровный тёмный цвет */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.about-text p,
+.about-text li {
+  color: #222; /* чтобы списки и текст были одинакового цвета */
+}
+
+.about-text ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.about-side {
+  flex: 1;
+}
+
+.side-block {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.side-block h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.chip {
+  display: inline-block;
+  background: #ececec;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+  margin: 4px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+}
+
+.stat b {
+  font-size: 22px;
+  color: #111;
+}
+
+.stat span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* удаляем фото, если оно не нужно */
+#about-photo {
+  display: none !important;
+}
+
 
 
 
