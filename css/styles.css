@@ -571,7 +571,7 @@ body.home-page #contact .actions {
   #contact::before, #contact::after {
     display: none !important;
     content: none !important;
-    
+  }
 #hero-title {
   font-family: "Poppins", "Montserrat", Arial, sans-serif;
   font-weight: 200;        
