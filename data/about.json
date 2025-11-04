@@ -1,44 +1,25 @@
-document.addEventListener("DOMContentLoaded", async () => {
-  try {
-    // Загружаем данные из JSON
-    const response = await fetch("/js/about.json");
-    const data = await response.json();
-
-    // --- 1. ФОТО (если есть)
-    if (data.photo) {
-      const photo = document.getElementById("about-photo");
-      photo.src = data.photo;
-      photo.style.display = "block";
+{
+  "intro": "Привет! Я создаю акцентные стены и декоративные покрытия под ваш интерьер.",
+  "services": [
+    "Венецианка",
+    "Бетон / микроцемент",
+    "Марокканская штукатурка",
+    "Текстурные акценты",
+    "Подбор цвета и образцов"
+  ],
+  "stats": [
+    {
+      "value": "5+ лет",
+      "label": "опыта"
+    },
+    {
+      "value": "60+",
+      "label": "проектов"
+    },
+    {
+      "value": "4 этапа",
+      "label": "замер → палитра → образец → реализация"
     }
-
-    // --- 2. УСЛУГИ
-    if (data.services && data.services.length > 0) {
-      const servicesDiv = document.getElementById("services");
-      const title = document.createElement("h3");
-      title.textContent = "Услуги и примеры цен";
-      servicesDiv.appendChild(title);
-
-      const list = document.createElement("ul");
-      data.services.forEach(service => {
-        const li = document.createElement("li");
-        li.textContent = service;
-        list.appendChild(li);
-      });
-      servicesDiv.appendChild(list);
-    }
-
-    // --- 3. СТАТИСТИКА (опыт, проекты, этапы)
-    if (data.stats && data.stats.length > 0) {
-      const statsDiv = document.getElementById("stats");
-      data.stats.forEach(stat => {
-        const statEl = document.createElement("div");
-        statEl.style.marginBottom = "8px";
-        statEl.innerHTML = `<strong>${stat.value}</strong> — ${stat.label}`;
-        statsDiv.appendChild(statEl);
-      });
-    }
-
-  } catch (err) {
-    console.error("Ошибка загрузки about.json:", err);
-  }
-});
+  ],
+  "photo": ""
+}
