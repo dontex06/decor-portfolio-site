@@ -5,71 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Обо мне — Декоративная штукатурка</title>
   <meta name="description" content="Декоративная штукатурка, акцентные стены и авторские фактуры." />
+
+  <!-- Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Стили -->
   <link rel="stylesheet" href="/css/styles.css">
-  
 </head>
+
 <body>
 <header>
   <div class="wrap nav">
     <nav class="menu" aria-label="Навигация">
       <a href="/index.html">Главная</a>
-      <a href="/about.html">Обо мне</a>
+      <a href="/about.html" class="active">Обо мне</a>
       <a href="/portfolio.html">Портфолио</a>
       <a href="/contacts.html">Контакты</a>
-      
     </nav>
   </div>
 </header>
 
-<section class="about">
-  <div class="wrap">
-    <div class="about-content">
-      
-      <!-- Левая колонка: текст -->
-      <div class="about-text">
-        <h2>Обо мне</h2>
-        <p>
-          Привет! Меня зовут Вадим — я разработчик, занимаюсь созданием современных и адаптивных веб-сайтов. 
-          Люблю чистый код, структурированный дизайн и понятные интерфейсы.
-        </p>
-        <p>
-          Работаю с HTML, CSS, JavaScript и активно осваиваю фреймворки. 
-          Стараюсь писать код, который не просто работает, а читается и развивается.
-        </p>
-      </div>
+<!-- Раздел "Обо мне" -->
+<section class="wrap about">
+  <div class="about-content">
 
-      <!-- Правая колонка: направления и проекты -->
-      <div class="about-side">
-        
-        <div class="side-block">
-          <h3>Мои направления</h3>
-          <div class="services">
-            <div class="chip">Frontend-разработка</div>
-            <div class="chip">UI/UX-дизайн</div>
-            <div class="chip">Адаптивная верстка</div>
-            <div class="chip">Оптимизация сайта</div>
-          </div>
-        </div>
-
-        <div class="side-block">
-          <h3>Опыт и проекты</h3>
-          <div class="stats">
-            <div class="stat"><b>3+</b> года опыта</div>
-            <div class="stat"><b>20+</b> проектов</div>
-            <div class="stat"><b>5</b> крупных клиентов</div>
-          </div>
-        </div>
-
-      </div>
+    <!-- Левая часть -->
+    <div class="about-text">
+      <h2>Обо мне</h2>
+      <p><strong>Здравствуйте!</strong></p>
+      <p>
+        Меня зовут Сергей, я профессиональный декоратор — мастер по созданию интерьеров с помощью декоративных материалов, таких как:
+      </p>
+      <ul>
+        <li><strong>Декоративные штукатурки</strong> — фактурные (объёмные), структурные (с глубиной и рисунком), текстурные (например, эффект кожи рептилий).</li>
+        <li><strong>Венецианская штукатурка</strong>, позволяющая имитировать структуру мрамора или текстуру камня.</li>
+        <li><strong>Креативные покрытия</strong> — имитация шелка, песчаного вихря, морозных узоров и других эффектов.</li>
+        <li><strong>Декоративные панно</strong>, выполненные акварелью или аэрографом.</li>
+        <li><strong>Реставрация</strong> любых декоративных элементов, где важен цвет, объём и фактура.</li>
+      </ul>
+      <p>
+        Мой опыт в этой сфере — с <strong>1999 года</strong>, когда направление только зарождалось в нашем городе.
+      </p>
+      <p>
+        При необходимости я самостоятельно изготавливаю нужный инструмент под конкретную задачу.
+      </p>
     </div>
+
+    <!-- Правая часть -->
+    <aside class="about-side">
+      <div class="side-block">
+        <h3>Мои направления</h3>
+        <div class="services">
+          <span class="chip">Венецианская штукатурка</span>
+          <span class="chip">Бетон / микроцемент</span>
+          <span class="chip">Марокканская штукатурка</span>
+          <span class="chip">Текстурные акценты</span>
+          <span class="chip">Подбор цвета и образцов</span>
+        </div>
+      </div>
+
+      <div class="side-block">
+        <h3>Опыт и проекты</h3>
+        <div class="stats">
+          <div class="stat">
+            <b>25+</b>
+            <span>лет опыта</span>
+          </div>
+          <div class="stat">
+            <b>100+</b>
+            <span>реализованных проектов</span>
+          </div>
+          <div class="stat">
+            <b>4 этапа</b>
+            <span>замер → палитра → образец → реализация</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
   </div>
 </section>
 
-
-
 <script src="/js/common.js"></script>
-  <script src="/js/about.js"></script> 
-</body></html>
+</body>
+</html>
