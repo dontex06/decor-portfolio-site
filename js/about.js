@@ -23,10 +23,5 @@ fetch('/data/about.json')
         .join('');
     }
 
-    // Фото
-    if (photo && data.photo) {
-      photo.src = data.photo;
-      photo.style.display = 'block';
-    }
   })
   .catch(err => console.error('Ошибка при загрузке about.json:', err));
