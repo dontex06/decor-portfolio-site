@@ -24,32 +24,50 @@
   </div>
 </header>
 
-<section class="wrap about">
-  <div class="about-content">
+<section class="about">
+  <div class="wrap">
+    <div class="about-content">
+      
+      <!-- Левая колонка: текст -->
+      <div class="about-text">
+        <h2>Обо мне</h2>
+        <p>
+          Привет! Меня зовут Вадим — я разработчик, занимаюсь созданием современных и адаптивных веб-сайтов. 
+          Люблю чистый код, структурированный дизайн и понятные интерфейсы.
+        </p>
+        <p>
+          Работаю с HTML, CSS, JavaScript и активно осваиваю фреймворки. 
+          Стараюсь писать код, который не просто работает, а читается и развивается.
+        </p>
+      </div>
 
-    <!-- Левая колонка: сюда JSON вставит текст -->
-    <div class="about-text">
-      <h2>Обо мне</h2>
-      <div id="about-intro"></div>
+      <!-- Правая колонка: направления и проекты -->
+      <div class="about-side">
+        
+        <div class="side-block">
+          <h3>Мои направления</h3>
+          <div class="services">
+            <div class="chip">Frontend-разработка</div>
+            <div class="chip">UI/UX-дизайн</div>
+            <div class="chip">Адаптивная верстка</div>
+            <div class="chip">Оптимизация сайта</div>
+          </div>
+        </div>
+
+        <div class="side-block">
+          <h3>Опыт и проекты</h3>
+          <div class="stats">
+            <div class="stat"><b>3+</b> года опыта</div>
+            <div class="stat"><b>20+</b> проектов</div>
+            <div class="stat"><b>5</b> крупных клиентов</div>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-    <!-- Правая колонка -->
-    <aside class="about-side">
-
-      <div class="side-block">
-        <h3>Мои направления</h3>
-        <div class="services" id="services"></div>
-      </div>
-
-      <div class="side-block">
-        <h3>Опыт и проекты</h3>
-        <div class="stats" id="stats"></div>
-      </div>
-
-    </aside>
-
   </div>
 </section>
+
 
 
 <script src="/js/common.js"></script>
