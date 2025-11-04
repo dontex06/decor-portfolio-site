@@ -584,6 +584,58 @@ body.home-page #contact .actions {
     font-size: clamp(20px, 2.5vw, 36px);
   }
 }
+    .about {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.chip {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.chip:hover {
+  background: #e0e0e0;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.stat {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.stat b {
+  display: block;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 
