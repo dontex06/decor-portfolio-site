@@ -1,27 +1,35 @@
 fetch('/data/about.json')
-  .then(r => r.json())
+  .then(response => response.json())
   .then(data => {
+    // элементы на странице
     const intro = document.getElementById('about-intro');
     const services = document.getElementById('services');
     const stats = document.getElementById('stats');
-    const photo = document.getElementById('about-photo');
 
-    // Текст с HTML-разметкой
-    if (intro && data.intro) intro.innerHTML = data.intro;
+    // вставляем HTML (а не текст)
+    if (intro && data.intro) {
+      intro.innerHTML = data.intro;
+    }
 
-    // Список направлений
+    // вставляем чипы с направлениями
     if (services && Array.isArray(data.services)) {
       services.innerHTML = data.services
         .map(s => `<span class="chip">${s}</span>`)
         .join('');
     }
 
-    // Статистика
+    // вставляем блоки статистики
     if (stats && Array.isArray(data.stats)) {
       stats.innerHTML = data.stats
-        .map(it => `<div class="stat"><b>${it.value}</b>${it.label}</div>`)
+        .map(stat => `
+          <div class="stat">
+            <b>${stat.value}</b>
+            <span>${stat.label}</span>
+          </div>
+        `)
         .join('');
     }
-
   })
-  .catch(err => console.error('Ошибка при загрузке about.json:', err));
+  .catch(err => {
+    console.error('Ошибка при загрузке about.json:', err);
+  });
