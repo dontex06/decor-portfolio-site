@@ -46,7 +46,10 @@ section{padding:64px 0}
 .about {
   display: block;
 }
-.about p{color:var(--muted)}
+.about-text p,
+.about-text ul li {
+  color: var(--ink) !important; /* var(--ink) это #1C1C1C — твой основной цвет */
+}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .stat{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);text-align:center}
 .stat b{display:block;font-size:24px}
