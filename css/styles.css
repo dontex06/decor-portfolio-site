@@ -635,6 +635,62 @@ body.home-page #contact .actions {
     grid-template-columns: 1fr;
   }
 }
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Левая колонка — основной текст */
+.about-text {
+  flex: 1 1 60%;
+  line-height: 1.7;
+  color: var(--text-color, #333);
+}
+
+/* Правая колонка — чипы и статистика */
+.about-side {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* "Чипы" (направления) */
+.chip {
+  display: inline-block;
+  background: #f2f2f2;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+}
+
+/* Блоки статистики */
+.stat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.stat b {
+  font-size: 1.4rem;
+  color: #111;
+}
+
+/* Исправляем потемнение текста */
+.about-text ul li {
+  color: #333 !important;
+}
+
+.about-text p {
+  color: #333 !important;
+}
 
 
 
