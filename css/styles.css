@@ -584,74 +584,21 @@ body.home-page #contact .actions {
     font-size: clamp(20px, 2.5vw, 36px);
   }
 }
+/* === Layout: текст слева, блоки справа === */
 .about-content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
   align-items: flex-start;
-}
-
-/* Левая колонка — основной текст */
-.about-text {
-  flex: 1 1 60%;
-  line-height: 1.7;
-  color: var(--text-color, #333);
-}
-
-/* Правая колонка — чипы и статистика */
-.about-side {
-  flex: 1 1 35%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* "Чипы" (направления) */
-.chip {
-  display: inline-block;
-  background: #f2f2f2;
-  padding: 6px 12px;
-  margin: 4px;
-  border-radius: 16px;
-  font-size: 0.9rem;
-}
-
-/* Блоки статистики */
-.stat {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background: #fafafa;
-  border-radius: 12px;
-  padding: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.stat b {
-  font-size: 1.4rem;
-  color: #111;
-}
-
-/* Исправляем потемнение текста */
-.about-text ul li {
-  color: #333 !important;
-}
-
-.about-text p {
-  color: #333 !important;
-}
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 40px;
-  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 /* Левая колонка (текст) */
 .about-text {
   flex: 1 1 60%;
-  line-height: 1.7;
   color: #333;
+  line-height: 1.7;
+  font-size: 16px;
 }
 
 /* Правая колонка */
@@ -662,199 +609,66 @@ body.home-page #contact .actions {
   gap: 32px;
 }
 
-/* Общий стиль блока справа */
+/* Заголовки справа */
 .side-block h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
   margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1c1c1c;
 }
 
-/* Чипы с услугами */
+/* Чипы */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 .chip {
-  display: inline-block;
-  background: #f2f2f2;
-  padding: 6px 12px;
-  margin: 4px;
+  background: #f4f4f4;
+  color: #333;
   border-radius: 16px;
-  font-size: 0.9rem;
+  padding: 6px 12px;
+  font-size: 14px;
 }
 
 /* Статистика */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .stat {
-  background: #fafafa;
+  background: #fff;
   border-radius: 12px;
   padding: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   text-align: center;
 }
-
 .stat b {
   display: block;
   font-size: 1.4rem;
   color: #111;
-  margin-bottom: 4px;
 }
 
 /* Исправление потемневшего текста */
-.about-text p,
-.about-text li {
+.about-text p, .about-text li {
   color: #333 !important;
 }
 
-/* Адаптив — при узком экране всё в одну колонку */
-@media (max-width: 768px) {
+/* Адаптив — колонки под друг другом */
+@media (max-width: 820px) {
   .about-content {
     flex-direction: column;
   }
-
   .about-side {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
   }
-
   .side-block {
-    flex: 1 1 100%;
+    flex: 1 1 48%;
   }
 }
-/* === Layout: две колонки (текст слева, side справа) === */
-.about-content {
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-}
-
-/* Левая колонка (текст) — занимает ~60% ширины */
-.about-text {
-  flex: 1 1 60%;
-  color: #333;              /* единый цвет текста */
-  line-height: 1.7;
-  font-size: 16px;
-}
-
-/* Правая колонка (чипы + статистика) — 35% */
-.about-side {
-  flex: 0 0 34%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Заголовки справа */
-.side-block h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #222;
-}
-
-/* Чипы (услуги) */
-.services { display:flex; flex-wrap:wrap; gap:8px; }
-.chip {
-  display:inline-block;
-  padding:6px 12px;
-  border-radius:16px;
-  background:#f4f4f4;
-  font-size:14px;
-  color:#333;
-}
-
-/* Статистика */
-.stats { display:flex; flex-direction:column; gap:12px; }
-.stat {
-  padding:10px;
-  border-radius:10px;
-  background:#fff;
-  box-shadow:0 2px 8px rgba(0,0,0,0.04);
-  text-align:center;
-}
-.stat b { display:block; font-size:1.4rem; color:#111; }
-
-/* Принудительно унифицируем цвет всех параграфов и пунктов в блоке about-text */
-.about-text p,
-.about-text li,
-.about-text ul,
-.about-text ol {
-  color: #333 !important;
-}
-
-/* Адаптив: на мобильных — единая колонка */
-@media (max-width: 820px) {
-  .about-content { flex-direction: column; }
-  .about-side { flex-direction: row; flex-wrap:wrap; gap:12px; }
-  .about-side .side-block { flex: 1 1 48%; }
-}
-    /* === ОБО МНЕ === */
-.about-content {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-}
-
-.about-text {
-  flex: 2;
-  color: #222; /* ровный тёмный цвет */
-  line-height: 1.6;
-  font-size: 16px;
-}
-
-.about-text p,
-.about-text li {
-  color: #222; /* чтобы списки и текст были одинакового цвета */
-}
-
-.about-text ul {
-  margin-left: 20px;
-  list-style: disc;
-}
-
-.about-side {
-  flex: 1;
-}
-
-.side-block {
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 16px 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 20px;
-}
-
-.side-block h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.chip {
-  display: inline-block;
-  background: #ececec;
-  border-radius: 20px;
-  padding: 6px 14px;
-  font-size: 14px;
-  margin: 4px;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  margin: 8px 0;
-}
-
-.stat b {
-  font-size: 22px;
-  color: #111;
-}
-
-.stat span {
-  font-size: 14px;
-  color: #555;
-}
-
-/* удаляем фото, если оно не нужно */
-#about-photo {
-  display: none !important;
-}
-
 
 
 
