@@ -590,5 +590,72 @@ body.home-page #contact .actions {
   }
 }
 
+/* Контейнер с направлениями (чипами) */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* центрирование */
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.chip {
+  display: inline-block;
+  background-color: #f5f5f5;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Блок с цифрами (опыт, проекты, этапы) */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* выравниваем по центру */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stat {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  width: 100%;               /* по умолчанию во всю ширину */
+  max-width: 150px;          /* но не шире 150px */
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.stat b {
+  font-size: 1.5rem;
+}
+
+/* --- Мобильная адаптация --- */
+@media (max-width: 768px) {
+  .services {
+    justify-content: center;
+  }
+
+  .chip {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .stats {
+    gap: 12px;
+  }
+
+  .stat {
+    flex: 1 1 45%;   /* две карточки в ряд при ширине экрана от ~400px */
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat {
+    flex: 1 1 100%;  /* по одной карточке в ряд */
+  }
+}
 
 
