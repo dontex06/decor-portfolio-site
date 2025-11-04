@@ -766,6 +766,65 @@ body.home-page #contact .actions {
   }
 
   .about-side h3
+/* ===== Мобильная адаптация секции "Обо мне" ===== */
+@media (max-width: 768px) {
+  /* Центрируем всю колонку */
+  .about-side {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+
+  /* Заголовки по центру */
+  .about-side h3 {
+    text-align: center !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Контейнеры с карточками — выравниваем по центру */
+  .services,
+  .stats {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  /* Чипы направлений */
+  .chip {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 45% !important; /* две в строку */
+    min-width: 150px !important;
+    text-align: center !important;
+  }
+
+  /* Карточки "опыта" — делаем одинаковыми */
+  .stat {
+    width: 45% !important; /* две в строку */
+    min-width: 150px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .stat b {
+    display: block !important;
+    margin-bottom: 5px !important;
+  }
+
+  /* Добавляем отступ снизу, чтобы можно было пролистать */
+  .about-side::after {
+    content: "";
+    display: block;
+    height: 50px;
+  }
+}
 
 
 
